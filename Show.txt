@@ -1,0 +1,37 @@
+import React from "react";
+
+const Show = () => {
+  return (
+    <>
+      <table className="table table-striped mt-5">
+        <thead className="table table-dark">
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>
+              <div className="btn-group">
+                <button type="submit" className="btn btn-info">
+                  <i className="fa-regular fa-pen-to-square"></i>
+                </button>
+
+                <button type="submit" className="btn btn-danger">
+                  <i className="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  );
+};
+
+export default Show;
