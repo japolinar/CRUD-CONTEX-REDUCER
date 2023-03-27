@@ -64,7 +64,7 @@ export const AppProvider = ({children})=>{
             'success'
             )
         }
-        })        
+        });        
     }
 
     const values = ''
