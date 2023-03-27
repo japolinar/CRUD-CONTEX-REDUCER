@@ -8,7 +8,9 @@ function App() {
   
   return (
     <div className="container text-center">
-      <h2 className="m-5 text-uppercase text-white grady p-2 rounded">CRUD Contex - Reducer</h2>
+      <h2 className="m-5 text-uppercase text-white grady p-2 rounded">
+        CRUD Contex - Reducer
+      </h2>
       <Create/>
       <Show/>
     </div>
