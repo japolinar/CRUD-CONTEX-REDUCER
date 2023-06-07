@@ -60,11 +60,11 @@ const EditModal = ({show, handleClose, rowData}) => {
 
           <Modal.Footer>
             <Button variant="success" onClick={handleSubmit} >
-              Update
+              Actualizar
             </Button>
 
             <Button variant="danger" onClick={handleClose}>
-              Close
+              Cerrar
             </Button>            
           </Modal.Footer>
         </Modal>
