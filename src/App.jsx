@@ -8,9 +8,13 @@ function App() {
   
   return (
     <div className="container text-center">
-      <h2 className="m-5 text-uppercase text-white grady p-2 rounded">
-        CRUD Context - Reducer
-      </h2>
+      <div className="m-5 grady d-flex p-2 rounded justify-content-center">
+        <img src={viteLogo} alt="" className="px-3" />
+
+        <h2 className="text-uppercase text-white px-2">
+          CRUD Context - Reducer
+        </h2>
+      </div>
       <Create/>
       <Show/>
     </div>
