@@ -14,7 +14,7 @@ const Create = () => {
     e.preventDefault();
     //console.log(`Su nombre es: ${name} - tiene ${edad} años `);
     if(name === '' || edad === ''){
-      console.log('Todos los datos son obligatorios');
+      //console.log('Todos los datos son obligatorios');
       setError(true);
 
       setTimeout(() => {
