@@ -24,7 +24,7 @@ export const AppProvider = ({children})=>{
         msj: Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: `El estudiante ${student.name} fue creado`,
+            title: `El Estudiante ${student.name} <br/> Fue Creado`,
             showConfirmButton: false,
             timer: 2500
         })
@@ -36,7 +36,7 @@ export const AppProvider = ({children})=>{
         msj: Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: `El estudiante ${student.name} <br/> fue Actualizado`,
+            title: `El Estudiante ${student.name} <br/> Fue Actualizado`,
             showConfirmButton: false,
             timer: 2500
         })      
@@ -60,7 +60,7 @@ export const AppProvider = ({children})=>{
             })
             Swal.fire(
             'Eliminado!',
-            'Se elimino el Estudiante.',
+            'Se Elimino El Estudiante.',
             'success'
             )
         }

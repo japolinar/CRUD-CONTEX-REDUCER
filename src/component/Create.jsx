@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { AppContext, useAppContext } from '../context/appContext';
+import Error from './Error';
 
 const Create = () => {
 
@@ -7,23 +8,32 @@ const Create = () => {
 
   const [name, setName] = useState('');
   const [edad, setEdad] = useState('');
+  const [error, setError] = useState(false);
 
   const handleSubmit = (e)=>{ 
     e.preventDefault();
     //console.log(`Su nombre es: ${name} - tiene ${edad} años `);
+    if(name === '' || edad === ''){
+      console.log('Todos los datos son obligatorios');
+      setError(true);
 
-    createStudent({
-      id: Date.now(),
-      name,
-      edad
-    })
+      setTimeout(() => {
+        setError(false);        
+      }, 3500);
 
-    setName('')
-    setEdad('')
+    }else{
+      createStudent({
+        id: Date.now(),
+        name,
+        edad
+      })  
+      setName('')
+      setEdad('')
+    }
 
   }
   return (
-    <>
+    <>  
       <form onSubmit={handleSubmit}>
         <div className="form-floating mb-3">
           <input
@@ -53,6 +63,8 @@ const Create = () => {
           </button>
         </div>
       </form>
+
+      {error ? <Error>Todos los datos son obligatorios</Error> : null}
     </>
   );
 }
